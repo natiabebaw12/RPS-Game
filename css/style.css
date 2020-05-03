@@ -1,0 +1,36 @@
+/* contains all elements */
+#container {
+    width: 75%;
+    margin: 30px auto;
+    border: 1px solid rgba(207, 35, 12, 0.808);
+    text-align: center;
+}
+/* title dev */
+#container .title{
+    color: #fff;
+    font-family: orbitron, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding: 30px;
+    background-color: rgb(75, 39, 16);
+}
+
+#container #flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 30px;
+}
+/* IMAGE INSIDE A CONTAINER */
+#container #flex-container img {
+    border: 1px solid rgb(75, 39, 16);
+    border-radius: 2px;
+    transition: ease-in-out 0.4s;
+}
+
+#container #flex-container img:hover {
+    box-shadow: 0px 10px 50px rgb(75, 39, 16);
+    border: 1px solid rgb(75, 39, 16);
+    border-radius: 8px;
+}
