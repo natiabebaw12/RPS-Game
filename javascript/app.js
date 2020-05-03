@@ -86,16 +86,16 @@ function rpsFrontEnd(humanImageChoice, botImageChoice, finalMessage) {
     let botDiv = document.createElement('div');
     let messageDiv = document.createElement('div');
 
-    humanDiv.innerHTML = "<img src='" + imageDatabase[humanImageChoice] + "' height=150 width=150 style='box-shadow:0px 10px 50px rgb(59, 147, 206);' >"
-    messageDiv.innerHTML = "<h1 style='color: " + finalMessage.color + "; font-size: 60px; padding:30px; '>" + finalMessage['message'] + "</h1>"
-    botDiv.innerHTML = "<img src='" + imageDatabase[botImageChoice] + "' height=150 width=150 style='box-shadow:0px 10px 50px rgba(243, 38, 24, 1);' >"
+    humanDiv.innerHTML = "<img src='" + imageDatabase[humanImageChoice] + "' width=200 height=250 style='box-shadow:0px 10px 50px rgb(59, 147, 206);' >"
+    messageDiv.innerHTML = "<h1 style='color: " + finalMessage.color + "; font-size: 80px; padding:30px; '>" + finalMessage['message'] + "</h1>"
+    botDiv.innerHTML = "<img src='" + imageDatabase[botImageChoice] + "' width=200 height=250 style='box-shadow:0px 10px 50px rgba(243, 38, 24, 1);' >"
 
     document.getElementById('flex-container').appendChild(humanDiv);
     document.getElementById('flex-container').appendChild(messageDiv)
     document.getElementById('flex-container').appendChild(botDiv);
 
     let repeatDiv = document.getElementById('repeat');
-    repeatDiv.innerHTML = "<button class='btn btn-success' onClick='repeat()'> repeat </button>";
+    repeatDiv.innerHTML = "<button class='repeat-btn' onClick='repeat()'> repeat </button>";
 
 }
 
